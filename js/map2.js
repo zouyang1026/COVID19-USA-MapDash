@@ -96,6 +96,8 @@ mapboxgl.accessToken =
             var totalCases = visibleFeatures.reduce(function(acc, feature) {
                 return acc + feature.properties.cases;
             }, 0);
+
+            document.getElementById('totalCasesDisplay').innerText = "Total Cases: " + totalCases.toLocaleString();
         
             
             var chartData = [
